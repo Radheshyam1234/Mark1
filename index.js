@@ -2,20 +2,20 @@ var readlineSync = require("readline-sync");
 
 var score = 0;
 
-// data of high score
+
 var highScores = [
   {
     name: "Radheshyam",
-    score: 5,
+    score: 6,
   },
 
   {
     name: "Rahul",
-    score: 4,
+    score: 8,
   },
 ]
 
-// array of objects
+
 var questions = [{
   question: " Which is my favourite movie? ",
   answer: "welcome"
@@ -46,13 +46,12 @@ function welcome() {
 }
 
 
-// play function
 function play(question, answer) {
   var userAnswer = readlineSync.question(question);
 
   if (userAnswer.toUpperCase() === answer.toUpperCase()) { // branching
     console.log("right!");
-    score = score + 1;
+    score = score + 2;
     
   } else {
     console.log("wrong!!");
@@ -63,12 +62,6 @@ function play(question, answer) {
   console.log("-------------")
 }
 
-// function game() {
-//   for (var i=0; i<questions.length; i++) {
-   
-//     play(questions[i].question, questions[i].answer)
-//   }
-// }
 
 function game(){
   questions.map(question=>{play(question.question,question.answer)})
@@ -76,6 +69,10 @@ function game(){
 
 function showScores() {
   console.log(" Your score is : ", score);
+
+  if(score==8){
+    console.log("Congrats you got the maximum !!!!!!!!")
+  }
 
   console.log("Check out the high scores");
 
