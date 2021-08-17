@@ -19,14 +19,14 @@ It's CLI(Command Line Interface) app which contains questions about myself(Radhe
 ## More about quiz :
  * It  will take username as input .
  * It will ask questions related to myself(Radheshyam) to check , how well they know me. and it does not have options.
- * It you answer is correct you will awarded with mark for each question and no negative marks for wrong answers.
+ * It you answer is correct you will be getting 2 marks for each question and no negative marks for wrong answers.
 
 *****
 
 
 
 ## Project link :
- Do you know me:
+ Do you know me:https://replit.com/@radheshyam111/Mark1?embed=true#index.js
 
 ## Thank you !
 
