@@ -7,12 +7,12 @@ var score = 0;
 var highScores = [
   {
     name: "Radheshyam",
-    score: 6,
+    score: 20,
   },
 
   {
     name: "Rahul",
-    score: 8,
+    score: 18,
   },
 ]
 
@@ -104,7 +104,7 @@ function game(){
 function showScores() {
   console.log(" Your score is : ", score);
 
- if(score>0 && score<=12)
+ if(score>=0 && score<=12)
  console.log(chalk.magenta("It looks like you don't know Radheshyam well"))
 
  else if(score>12 && score<=18)
